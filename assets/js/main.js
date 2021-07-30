@@ -8,12 +8,13 @@
     var box = $('.header-text').height();
     var header = $('header').height();
 
-    if (scroll >= box - header) {
-      $("header").addClass("background-header");
-    } else {
-      $("header").removeClass("background-header");
-    }
-  });
+    /*if (scroll >= box - header) {*/
+      if (scroll >= 80) {
+        $("header").addClass("background-header");
+      } else {
+        $("header").removeClass("background-header");
+      }
+    });
 
   /*// Back to top button
   $(window).scroll(function() {
